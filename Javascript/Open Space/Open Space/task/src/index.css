@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+}
+
+.space {
+    background-image: url("space.png");
+    height: 100vh;
+    width: 90vw;
+    position: center;
+    margin: 0vh 5vw 0vh 5vw;
+}
+
+.planet {
+    position: absolute;
+    bottom: -85px;
+    overflow: hidden;
+}
+
+.rocket {
+    position: absolute;
+    margin: 25vh 0vw 0vh 25vw;
+    -webkit-transform:rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.control-panel {
+    background:
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+            linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%),
+            #840b2a;
+    position: relative;
+    margin: 7rem 13rem 33rem 64rem;
+    height: 6cm;
+    width: 9cm;
+}
+
+.control-panel__inner {
+    background-color: black;
+    position: absolute;
+    margin: 1rem 1rem 1rem 1rem;
+    height: 5.1cm;
+    width: 8.2cm;
+}
+
+#pwd {
+    position: absolute;
+    margin: 0.5rem 25rem 1rem 2.5rem;
+    alignment: center;
+    border: 3px yellow solid;
+    background-color: black;
+    color: yellow;
+}
+
+#btn_ok {
+    position: absolute;
+    margin: 0.6rem 1rem 1rem 14rem;
+    background-color: yellow;
+    border-color: yellow;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.check-buttons {
+    position: absolute;
+    margin: 2.2rem 10rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: 285px;
+}
+
+.check-buttons_item {
+    position: center;
+    padding: 1rem 0rem;
+    margin: 0.3rem 1.5rem 1rem 0.6rem;
+}
+
+.levers {
+    position: absolute;
+    margin: 3.8rem 5rem 1rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    height: 95px;
+    width: 285px;
+}
+.levers_item {
+    width: 80px;
+    height: 8px;
+    position: center;
+    padding: 1rem 0rem;
+    margin: 1.8rem 0rem 1rem -1.2rem;
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#btn_launch {
+    position: absolute;
+    margin: 9.8rem 10rem 1rem 7.4rem;
+    height: 35px;
+    width: 70px;
+    background-color: red;
+    border: grey solid;
+    border-radius: 60% / 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+}
