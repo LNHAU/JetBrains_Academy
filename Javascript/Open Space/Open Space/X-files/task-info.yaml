@@ -17,7 +17,7 @@ files:
                 <img class="rocket" src="https://stepik.org/media/attachments/lesson/452681/rocket.png" alt="Rocket" >
             </div>
             <div class="control-panel">
-                <div class="control-panel_inner">
+                <div class="control-panel__inner">
                     <input type="password" name="password" placeholder="Enter password to unlock" id="pwd">
                     <input type="button" value="OK" id="btn_ok">
                     <div class="check-buttons">
@@ -89,7 +89,7 @@ files:
         width: 9cm;
     }
 
-    .control-panel_inner {
+    .control-panel__inner {
         background-color: black;
         position: absolute;
         margin: 1rem 1rem 1rem 1rem;
@@ -310,11 +310,11 @@ files:
             },
             //testing password field
             () => {
-                let controlPanelInner = document.getElementsByClassName('control-panel__inner')[0];
+                let controlPanelInner = document.getElementsByClassName('control-panel__inner');
                 if (controlPanelInner.length === 0) {
                     return hs.wrong("Can't find element with class=\"control-panel__inner\"");
                 }
-                for(let el of Array.from(controlPanelInner.children)){
+                for(let el of Array.from(controlPanelInner[0].children)){
                     if (el.tagName.toLowerCase() === 'input' && el.type.toLowerCase() === 'password') {
                         let styles = window.getComputedStyle(el);
                         if (styles.color && styles.border ) return  hs.correct()
@@ -422,7 +422,4 @@ files:
   learner_created: true
 feedback_link: https://hyperskill.org/projects/143/stages/774/implement#comment
 status: Solved
-feedback:
-  message: Congratulations!
-  time: Fri, 19 Mar 2021 16:13:00 UTC
 record: 4
