@@ -290,11 +290,11 @@ files:
             //#test8
             //testing password field
             () => {
-                let controlPanelInner = document.getElementsByClassName('control-panel__inner')[0];
+                let controlPanelInner = document.getElementsByClassName('control-panel__inner');
                 if (controlPanelInner.length === 0) {
                     return hs.wrong("Can't find element with class=\"control-panel__inner\"");
                 }
-                for(let el of Array.from(controlPanelInner.children)){
+                for(let el of Array.from(controlPanelInner[0].children)){
                     if (el.tagName.toLowerCase() === 'input' && el.type.toLowerCase() === 'password') {
                         let styles = window.getComputedStyle(el);
                         if (styles.color && styles.border ) return  hs.correct()
@@ -353,7 +353,4 @@ files:
   learner_created: false
 feedback_link: https://hyperskill.org/projects/143/stages/773/implement#comment
 status: Solved
-feedback:
-  message: Congratulations!
-  time: Mon, 15 Mar 2021 11:46:20 UTC
-record: 2
+record: 3
